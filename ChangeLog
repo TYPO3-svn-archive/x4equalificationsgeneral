@@ -1,0 +1,11 @@
+(add new changes on top of this file)
+
+10-08-13 Manuel Kammermann <manuel@4eyes.ch>
+	* Bugfix: When editing Record, author is now listed correctly
+	* Bugfix: substituteMarkerArrayCached() changed to fit typo3 4.4.0 api with array of subparts instead of string
+	* Bugfix: When creating a new record, cancel button has now valid Url
+	* class now extends x4epibase, not tslib_pibase directly anymore
+
+05-10-18 Andi Keller  <andi@4eyes.ch>
+
+	* Initial release

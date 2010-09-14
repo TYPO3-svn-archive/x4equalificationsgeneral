@@ -1,0 +1,37 @@
+.errHilite {
+	color: #ff0000;
+}
+
+input.errHilite {
+	background-color: #cccccc;
+	color: black;
+}
+
+.content-element h1 {
+	/*background: url(http://www.philhist.unibas.ch/fileadmin/histsem/_templates/images/f_bg_h1_v2.gif) repeat-x;*/
+	margin: 0;
+	padding: 11px 15px 0 15px;
+	font-size: 12px;
+	color: #606060;
+	height:27px;
+}
+
+/*.tx-x4equalification-pi2 h1 {
+	text-decoration: underline;
+	margin: 0;
+	padding: 11px 15px 0 15px;
+	font-size: 12px;
+	color: #B81D29;
+	height: 16px;
+}
+*/
+.tx-x4equalification-pi2 h2{
+	font-size: 11px;
+	font-weight:bold;
+	color: #606060;
+	margin: 0;
+}
+
+.tx-x4equalificationgeneral-pi2 td{
+	background: none!important;
+}

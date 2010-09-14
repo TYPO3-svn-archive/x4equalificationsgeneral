@@ -1,0 +1,6 @@
+plugin.tx_x4equalificationgeneral_pi1 {
+	persExtKey =
+}
+
+plugin.tx_x4equalificationgeneral_pi2 = USER_INT
+

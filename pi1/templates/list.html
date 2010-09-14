@@ -1,0 +1,210 @@
+<!-- ###searchBox### begin -->
+<form action="###formAction###" method="post">
+	<input type="hidden" name="no_cache" value="1" />
+	<input type="hidden" name="tx_x4equalificationgeneral_pi1[pointer]" value="" />
+	<p><strong>Suchen</strong></p>
+	<table class="tablelist searchTable" border="0" cellpadding="0" cellspacing="0" width="100%">
+	    <tbody>
+	    <tr class="odd">
+	      <td>Titel:</td>
+	      <td>
+	      	<input type="text" name="tx_x4equalificationgeneral_pi1[sword]" value="###searchWord###" />
+  			</td>
+	    </tr>
+	    <tr>
+	      <td>Betreuerin/Betreuer:</td>
+	      <td><input type="text" name="tx_x4equalificationgeneral_pi1[organizerSearchWord]" value="###organizerSearchWord###" /></td>
+	    </tr>
+	    <tr class="odd">
+	      <td>Autorin/Autor:</td>
+	      <td><input name="tx_x4equalificationgeneral_pi1[authorSearchWord]" value="###authorSearchWord###" type="text" /></td>
+	    </tr>
+
+
+	    <tr>
+	      <td>Abschlussjahr:</td>
+	      <td>
+	      	<select name="tx_x4equalificationgeneral_pi1[year]">
+	  			<!-- ###yearOptions### begin -->
+	  				<option value="###value###" ###selected###>###label###</option>
+	  			<!-- ###yearOptions### end -->
+  			</select>
+	      </td>
+	    </tr>
+
+
+	    <tr class="odd">
+	      <td>Typ</td>
+	      <td>
+	      	<!-- ###status### begin -->
+	      	<select name="tx_x4equalificationgeneral_pi1[status]">
+	  			<option selected="selected">Status</option>
+	  			<option>-----</option>
+	  			<!-- ###statusOptions### begin -->
+	  				<option value="###value###" ###selected###>###label###</option>
+	  			<!-- ###statusOptions### end -->
+  			</select>
+  			<!-- ###status### end -->
+  			<select name="tx_x4equalificationgeneral_pi1[type]">
+  				###typeOptions###
+  			</select>
+  		</td>
+	    </tr>
+	    <tr>
+	      <td>&nbsp;</td>
+	      <td><input type="submit" name="tx_x4equalificationgeneral_pi1[submit]" value="###submit###" /></td>
+	    </tr>
+	  </tbody>
+	</table>
+</form>
+<p>###profListLink###</p>
+<!-- ###newRecordLink### --><p>###link###<p><!-- ###newRecordLink### -->
+<!-- ###searchBox### end -->
+
+
+
+
+<!-- ###listProfs### begin -->
+
+<table class="tablelist" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+<!-- ###prof### begin -->
+<tr><th class="title" colspan="###span###"><h1>###profName###</h1></th></tr>
+<!-- ###rowSet### begin -->
+<tr class="function-title"><th colspan="###span###"><h2>###header###</h2></th></tr>
+	<!-- ###headRow### begin -->
+	<tr class="tableheader">
+		<!-- ###cell### -->
+			<th>###content###</th>
+		<!-- ###cell### -->
+	</tr>
+	<!-- ###headRow### end -->
+
+	<!-- ###rows### begin -->
+		<!-- ###row0### begin --->
+		<tr class="odd">
+			<!-- ###cell### -->
+				<td class="cell0">###content###</td>
+			<!-- ###cell### -->
+		</tr>
+		<!-- ###row0### end -->
+
+		<!-- ###row1### begin -->
+		<tr>
+			<!-- ###cell### -->
+				<td class="cell1">###content###</td>
+			<!-- ###cell### -->
+		</tr>
+		<!-- ###row1### end -->
+	<!-- ###rows### end -->
+	<tr class="function-title"><th colspan="###span###">&nbsp;</th></tr>
+<!-- ###rowSet### end -->
+<!-- ###prof### end -->
+
+</table>
+
+<!-- ###listProfs### end -->
+
+
+
+
+<!-- ###listPersonel### begin -->
+
+<!-- ###titleSP### begin -->
+<h1>###title###</h1>
+<!-- ###titleSP### end -->
+<!-- ###newRecordLink### --><p>###link###<p><!-- ###newRecordLink### -->
+<table class="tablelist" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+<!-- ###rowSet### begin -->
+<tr class="function-title"><th colspan="###span###"><h2>###header###</h2></th></tr>
+	<!-- ###headRow### begin -->
+	<tr class="tableheader">
+		<!-- ###editCol### -->
+			<th colspan="2">&nbsp;</th>
+		<!-- ###editCol### -->
+		<!-- ###cell### -->
+			<th>###content###</th>
+		<!-- ###cell### -->
+	</tr>
+	<!-- ###headRow### end -->
+
+	<!-- ###rows### begin -->
+		<!-- ###row0### begin -->
+		<tr class="odd">
+			<!-- ###editCol### -->
+				<td class="cell0" width="80">###editRecord###</td>
+				<td class="cell0" width="80">###removeRecord###</td>
+			<!-- ###editCol### -->
+			<!-- ###cell### -->
+				<td class="cell0"><a name="quali_###uid###" />###content###</td>
+			<!-- ###cell### -->
+		</tr>
+		<!-- ###row0### end -->
+
+		<!-- ###row1### begin -->
+		<tr>
+			<!-- ###editCol### -->
+				<td class="cell1" width="80px">###editRecord###</td>
+				<td class="cell1" width="80px">###removeRecord###</td>
+			<!-- ###editCol### -->
+			<!-- ###cell### -->
+				<td class="cell1"><a name="quali_###uid###" />###content###</td>
+			<!-- ###cell### -->
+		</tr>
+		<!-- ###row1### end -->
+	<!-- ###rows### end -->
+	<tr class="function-title"><th colspan="###span###">&nbsp;</th></tr>
+<!-- ###rowSet### end -->
+
+</table>
+	<form method="post" id="removequalificationgeneralForm" action="">
+		<p><input id="removeUid" type="hidden" value="" name="tx_x4equalificationgeneral_pi1[removeUid]" /></p>
+	</form>
+<!-- ###listPersonel### end -->
+
+
+<!-- ###list### begin -->
+<form method="post" id="removequalificationgeneralForm" action="">
+		<p><input id="removeUid" type="hidden" value="" name="tx_x4equalificationgeneral_pi1[removeUid]" /></p>
+</form>
+<table class="tablelist" border="0" cellpadding="0" cellspacing="0" width="100%">
+	<!-- ###headRow### begin -->
+	<tr class="tableheader">
+		<!-- ###editCol### -->
+			<th colspan="2">&nbsp;</th>
+		<!-- ###editCol### -->
+		<!-- ###cell### -->
+			<th>###content###</th>
+		<!-- ###cell### -->
+	</tr>
+	<!-- ###headRow### end -->
+
+	<!-- ###rows### begin -->
+		<!-- ###row0### begin -->
+		<tr class="odd">
+			<!-- ###editCol### -->
+				<td class="cell0" width="80">###editRecord###</td>
+				<td class="cell0" width="80">###removeRecord###</td>
+			<!-- ###editCol### -->
+			<!-- ###cell### -->
+				<td class="cell0">###content###</td>
+			<!-- ###cell### -->
+		</tr>
+		<!-- ###row0### end -->
+
+		<!-- ###row1### begin -->
+		<tr>
+			<!-- ###editCol### -->
+				<td class="cell1" width="80px">###editRecord###</td>
+				<td class="cell1" width="80px">###removeRecord###</td>
+			<!-- ###editCol### -->
+			<!-- ###cell### -->
+				<td class="cell1">###content###</td>
+			<!-- ###cell### -->
+		</tr>
+		<!-- ###row1### end -->
+	<!-- ###rows### end -->
+</table>
+<p>###pdfLink###</p>
+<!-- ###list### end -->

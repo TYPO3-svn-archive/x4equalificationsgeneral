@@ -1,0 +1,23 @@
+body{
+	width:auto!important;
+	min-width:1px!important;
+}
+
+.close-button,
+h2,
+form{
+	padding: 0px 15px 0px 15px!important;
+}
+
+h2{
+	font-size:12px;
+}
+
+form h2{
+	padding:0!important;
+}
+
+.tx-x4equalificationgeneral-pi2 td p{
+	padding:0;
+	margin:0;
+}

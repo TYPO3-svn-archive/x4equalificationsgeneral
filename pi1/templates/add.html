@@ -1,0 +1,121 @@
+<!-- ###newForm### begin -->
+<h1 class="csc-firstHeader">Abschlussarbeit eintragen</h1>
+<form action="###formAction###" method="post" enctype="multipart/form-data" onsubmit="return validateForm(this,0,0,0,0,5);">
+	<table class="tablelist" border="0" cellpadding="0" cellspacing="0" width="100%">
+	    <tbody>
+	    <tr>
+	    	<td valign="top"><p><strong><label for="tx_x4equalificationgeneral_pi2[organizer]">Betreuer*</label>:</strong></p><p><img src="typo3conf/ext/x4equalificationgeneral/images/icon_new.gif" height="9" width="9"> <a href="javascript:showPersonSearch('organizer');">Hinzufügen</a></p></td>
+	    	<td valign="top" nowrap>
+	    		<div id="organizerContainer">
+	    		<div id="organizerTemplate" style="visibility:hidden;display:none; height:0;"><p id="organizer_###UID###"> <a href="javascript:removePerson(###UID###,'organizer','###FIRSTNAME### ###NAME###')"><img src="typo3conf/ext/x4equalificationgeneral/images/icon_delete.gif" width="9" height="9" /> Entfernen</a> ###NAME### ###FIRSTNAME###</p></div>
+	    		<!-- ###author### --><p id="organizer_###actualUserUid###"><a href="javascript:removePerson(###actualUserUid###,'organizer','###actualUserFirstname### ###actualUserName###')"><img src="typo3conf/ext/x4equalificationgeneral/images/icon_delete.gif" width="9" height="9" /> Entfernen</a> ###actualUserName### ###actualUserFirstname###</p><!-- ###author### -->
+	    		</div>
+	        	<input id="organizerIds" type="text" style="visibility:hidden;height:0px;width:0px;" name="tx_x4equalificationgeneral_pi2[organizer]" value="###organizer###" alt="blank" />
+	        	<iframe id="organizerSearch" style="height:0px;width:0px;position:absolute;background-color:#ffffff;z-index:250;" src="###searchOrganizerFrameSrc###"></iframe>
+			</td>
+		</tr>
+	    <tr>
+	      <td><strong><label for="tx_x4equalificationgeneral_pi2[title]">Titel*:</label></strong></td>
+	      <td><textarea name="tx_x4equalificationgeneral_pi2[title]" type="text" alt="blank" cols="40" rows="3">###title###</textarea></td>
+	    </tr>
+	    <tr>
+	      <td>Typ</td>
+	      <td>
+  			<select name="tx_x4equalificationgeneral_pi2[type]">
+  				###typeOptions###
+  			</select>
+  		</td>
+	    </tr>
+	    <tr>
+	      <td>Abstract:</td>
+	      <td>
+	      	<textarea name="tx_x4equalificationgeneral_pi2[abstract]" cols="40" rows="6">###abstract###</textarea>
+	      </td>
+	    </tr>
+
+	    <tr>
+	      <td>Bilder</td>
+	      <td>
+	      	<input type="hidden" id="images" name="tx_x4equalificationgeneral_pi2[images]" value="###pictures###">
+	      	<!-- ###imgShow### begin -->
+	      		<p id="###image###"><a href="javascript:removeImage('###image###')"><img src="typo3conf/ext/x4equalificationgeneral/images/icon_delete.gif" width="9" height="9" /> Entfernen</a> ###image### <a target="_blank" href="###imageLink###">Ansehen</a><p>
+	      	<!-- ###imgShow### end -->
+	      	<!-- ###imgUpload### begin -->
+	      		<input name="tx_x4equalificationgeneral_pi2[###imgName###]" type="file" size="30" maxlength="100000" accept="text/*"><br />
+	      	<!-- ###imgUpload### end -->
+	      </td>
+	    </tr>
+	    <tr>
+	      <td>Abgeschlossen</td>
+	      <td>
+	      	<select name="tx_x4equalificationgeneral_pi2[finished]">
+	  			<!-- ###finishedOptions### begin -->
+	  				<option value="###value###" ###selected###>###label###</option>
+	  			<!-- ###finishedOptions### end -->
+  			</select>
+	      </td>
+	    </tr>
+	    <tr>
+	      <td>Abgebrochen</td>
+	      <td>
+	      	<select name="tx_x4equalificationgeneral_pi2[abortet]">
+	  			<!-- ###abortedOptions### begin -->
+	  				<option value="###value###" ###selected###>###label###</option>
+	  			<!-- ###abortedOptions### end -->
+  			</select>
+	      </td>
+	    </tr>
+		<tr>
+			<td><br/></td>
+			<td><br/></td>
+		</tr>
+	    <tr>
+	    	<td valign="top">
+	    		<p>
+	    			<strong><label for="tx_x4equalificationgeneral_pi2[student]">Autor*:</label></strong>
+	    		</p>
+	    		<p>
+	    			<img src="typo3conf/ext/x4equalificationgeneral/images/icon_new.gif" height="9" width="9"> <a href="javascript:showPersonSearch('student');">Hinzufügen</a><br />
+	    			<img src="typo3conf/ext/x4equalificationgeneral/images/icon_new.gif" height="9" width="9"> <a href="javascript:showPersonSearch('studentNew');">Erfassen</a>
+	    		</p>
+	    	</td>
+	    	<td valign="top" nowrap>
+	    		<div id="studentContainer">
+	    		<div id="studentTemplate" style="visibility:hidden;display:none; height:0;"><p id="student_###UID###"> <a href="javascript:removePerson(###UID###,'student','###FIRSTNAME### ###NAME###')"><img src="typo3conf/ext/x4equalificationgeneral/images/icon_delete.gif" width="9" height="9" /> Entfernen</a> <a href="javascript:editStudent(###UID###,'###editUrl###')"><img src="typo3conf/ext/x4equalificationgeneral/images/icon_edit.gif" width="9" height="9" /> Bearbeiten</a> ###NAME### ###FIRSTNAME###</p></div>
+	    		<!-- ###student### --><p id="student_###uid###"><a href="javascript:removePerson(###uid###,'student','###firstname### ###lastname###')"><img src="typo3conf/ext/x4equalificationgeneral/images/icon_delete.gif" width="9" height="9" /> Entfernen</a> <a href="javascript:editStudent(###uid###,'###editUrl###')"><img src="typo3conf/ext/x4equalificationgeneral/images/icon_edit.gif" width="9" height="9" /> Bearbeiten</a> ###lastname### ###firstname###</p> <!-- ###student### -->
+	    		</div>
+	        	<input id="studentIds" type="text" style="visibility:hidden;height:0px;width:0px;"  name="tx_x4equalificationgeneral_pi2[student]" value="###students###" alt="blank" />
+	        	<iframe id="studentSearch" style="height:0px;width:0px;position:absolute;background-color:#ffffff;z-index:250;" src="###searchStudentFrameSrc###"></iframe>
+	        	<iframe id="studentNewSearch" style="height:0px;width:0px;position:absolute;background-color:#ffffff;z-index:250;" src="###newStudentFrameSrc###"></iframe>
+	        	<iframe id="studentEdit" style="height:0px;width:0px;position:absolute;background-color:#ffffff;z-index:250;"></iframe>
+			</td>
+		</tr>
+	    <tr>
+	      <td>&nbsp;</td>
+	      <td><strong><input type="submit" name="tx_x4equalificationgeneral_pi2[submit]" value="###submit###" /> <input value="###newForm.back###" type="button" onclick="window.location.href='###backUrl###';" /></strong></td>
+	    </tr>
+	  </tbody>
+	</table>
+</form>
+<!-- ###newForm### end -->
+
+<!-- ###editForm### begin -->
+	<h1>###heading###</h1>
+	<table class="tablelist" width="100%">
+		<tbody>
+			###catSelectorBlock###
+			<form action="###formAction###" method="post" onsubmit="return validateForm(this,0,0,0,0,5);">
+				<input type="hidden" name="tx_publics_pi2[category_sub]" value="###category_sub###" />
+			###fields###
+			<tr>
+				<td>*obligatorisch</td>
+	    		<td><input value="###editForm.submit###" type="submit" /> <input value="###editForm.back###" type="button"></td>
+	  		</tr></form>
+		</tbody>
+	</table>
+</form>
+<!-- ###editForm### end -->
+
+<!-- ###creationSuccessful### begin -->
+	Record has been created
+<!-- ###creationSuccessful### end -->
